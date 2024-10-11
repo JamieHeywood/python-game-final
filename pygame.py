@@ -369,7 +369,7 @@ def show_description(description):
     lines = description.split("\n")
     for line in lines:
         print(line)
-        time.sleep(0.5)
+        time.sleep(5)
         clear() 
 
 def print_status(current_location):
@@ -606,13 +606,13 @@ def prompt():
     print("\t\tPress 'F' to drink Fasting Potion - Fill 2 hunger and pay respect\n")
     input("\t\tPress enter to continue...") #input with no use will pause the continuation until user input
     clear()
-# def journal():
-    # print("\t\tJournal\n\n")
-    # print("I don't know what's happened.\n Everywhere I look, I see people scared, running for their lives.\n All I hear is a mix of screaming and these eerie crackles of fear.\n Zombies.\n Zombies are everywhere, chasing after people down every street.\n I don't know how I am going to get back to my family.\n My son was at school, last I remember.\n My wife was at work at the museum.\n I hope I can get to them quickly.\n I need to get them to our home safely.\n Our home is on Abberley Drive.")
-    # input("press enter to start game..")
-    # clear()
+def journal():
+    print("\t\tJournal\n\n")
+    print("I don't know what's happened.\n Everywhere I look, I see people scared, running for their lives.\n All I hear is a mix of screaming and these eerie crackles of fear.\n Zombies.\n Zombies are everywhere, chasing after people down every street.\n I don't know how I am going to get back to my family.\n My son was at school, last I remember.\n My wife was at work at the museum.\n I hope I can get to them quickly.\n I need to get them to our home safely.\n Our home is on Abberley Drive.")
+    input("press enter to start game..")
+    clear()
 prompt()
-# journal()
+journal()
 hunger()
 start_game()
 navigate_location()
